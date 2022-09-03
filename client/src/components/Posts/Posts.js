@@ -7,7 +7,7 @@ import Post from './Post/Post';
 import useStyles from './styles';
 
 const Posts = ({ setCurrentId }) => {
-    const posts = useSelector((state) => state.posts);
+    const posts = useSelector((state) => state.posts); // useSelector has access to the whole redux store... (state) is what holds these values. "posts" is from index.js in reducers.
     const classes = useStyles();
 
     console.log(posts);
