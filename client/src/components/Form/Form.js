@@ -8,7 +8,7 @@ import { TextField, Button, Typography, Paper } from '@material-ui/core';
 
 const Form = ({ currentId, setCurrentId}) => {
     const [postData, setPostData] = useState({
-        creator: '', title: '', message: '', tags: '', selectedFile: ''
+        creator: '', title: '', message: '', selectedFile: ''
     });
 
     const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null);
@@ -35,7 +35,7 @@ const Form = ({ currentId, setCurrentId}) => {
 
     const clear = () => {
         setCurrentId(null);
-        setPostData( { creator: '', title: '', message: '', tags: '', selectedFile: '' });
+        setPostData( { creator: '', title: '', message: '', selectedFile: '' });
     }
 
     return (
@@ -71,6 +71,7 @@ const Form = ({ currentId, setCurrentId}) => {
                 />
 
                 <div className={classes.fileInput}>
+                    <p>Choose an image:</p>
                     <FileBase 
                         type="file"
                         multiple={false}
@@ -90,6 +91,7 @@ const Form = ({ currentId, setCurrentId}) => {
                 </Button>
 
                 <Button
+                    className={classes.buttonClear}
                     variant="contained"
                     color="secondary"
                     size="small"

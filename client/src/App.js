@@ -8,7 +8,7 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 
 import useStyles from './styles';
-
+import './styles.css';
 function App() {
 
   const [currentId, setCurrentId] = useState(null);
@@ -20,9 +20,9 @@ function App() {
   }, [currentId, dispatch]);
 
   return (
-    <Container maxwidth="lg">
+    <Container className={classes.container} maxwidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography className={classes.heading} variant="h2" align="center">Appname</Typography>
+        <Typography className="heading" variant="h2" align="center">Social Media</Typography>
         
       </AppBar>
       <Grow in>

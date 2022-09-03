@@ -20,6 +20,7 @@ export default makeStyles({
     borderRadius: '15px',
     height: '100%',
     position: 'relative',
+    boxShadow: '8px 10px 5px',
   },
   overlay: {
     position: 'absolute',
@@ -48,5 +49,8 @@ export default makeStyles({
     padding: '0 16px 8px 16px',
     display: 'flex',
     justifyContent: 'space-between',
+  },
+  message: {
+    wordWrap: 'break-word',
   },
 });

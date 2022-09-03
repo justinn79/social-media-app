@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import DeleteIcon from '@material-ui/icons/Delete';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import EditIcon from '@material-ui/icons/Edit';
 
 import { useDispatch } from 'react-redux';
 
@@ -32,22 +32,19 @@ const Post = ({ post, setCurrentId }) => {
                 size="small" 
                 onClick={() => setCurrentId(post._id)}
                 >
-                    <MoreHorizIcon fontSize="medium" />
+                    <EditIcon fontSize="medium" />
                 </Button>
             </div>
 
-            {/* <div className={classes.details}>
-                <Typography variant="body2" color="textSecondary">{post.tags.map((tag) => `#${tag} `)} </Typography>
-            </div> */}
             <Typography className={classes.title} variant="h5" gutterBottom>{post.title} </Typography>
 
             <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">{post.message} </Typography>
+                <Typography className={classes.message} variant="body2" color="textSecondary" component="p">{post.message} </Typography>
             </CardContent>
 
             <CardActions className={classes.cardActions}>
 
-                <Button size="small" color="primary" onClick={() => dispatch(likePost(post._id))}>
+                <Button size="small" color="primary" onClick={() => {dispatch(likePost(post._id))} }>
                     <ThumbUpAltIcon fontSize="small" />
                     &nbsp; Like &nbsp;
                     {post.likeCount}
@@ -55,7 +52,7 @@ const Post = ({ post, setCurrentId }) => {
 
                 <Button size="small" color="primary" onClick={() => {dispatch(deletePost(post._id))} }>
                     <DeleteIcon fontSize="small" />
-                    Delete
+                    &nbsp; Delete
                 </Button>
             </CardActions>
         </Card>
