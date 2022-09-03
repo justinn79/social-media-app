@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, [currentId, dispatch]);
 
   return (
     <Container maxwidth="lg">
@@ -27,7 +27,7 @@ function App() {
       </AppBar>
       <Grow in>
         <Container>
-          <Grid container justifyContent="space-between" alignItems="stretch" spacing={3}>
+          <Grid className={classes.mainContainer} container justifyContent="space-between" alignItems="stretch" spacing={3}>
             
             <Grid item xs={12} sm={7}>
               <Posts setCurrentId={setCurrentId}/>
