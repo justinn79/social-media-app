@@ -19,7 +19,7 @@ app.use('/posts', postRoutes);
 //     res.send('Hello world')
 // })
 
-// const CONNECTION_URL = 'mongodb+srv://admin:mCg7vBkLkjG3HwDb@cluster0.xsyfk6m.mongodb.net/?retryWrites=true&w=majority'
+// const CONNECTION_URL = 'mongodb+srv://user:pass@cluster0.xsyfk6m.mongodb.net/?retryWrites=true&w=majority'
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
