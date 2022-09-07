@@ -8,3 +8,16 @@ An application where users can create and display posts containing the uploaders
 * Express - Used to create the routing of the application based on client requests
 * Node - Back-end javascript runtime environment
 * Redux - Used for state management
+
+## Setup:
+```
+Within two terminals at the root directory of this project:
+
+cd client - Navigate into the client folder
+npm install - Install the dependencies within the client folder
+npm start - Running the client
+
+cd server - Navigate into the server folder
+npm install - Install the dependencies within the server folder
+npm start - Running the server
+```
