@@ -19,5 +19,6 @@ npm start - Running the client
 
 cd server - Navigate into the server folder
 npm install - Install the dependencies within the server folder
+Create a .env file within the server folder with a PORT number and a CONNECTION URL to your database
 npm start - Running the server
 ```
