@@ -1,6 +1,6 @@
 # Social Media Application
 
-An application where users can create and display posts containing the uploaders name, title, message, and image on the main page.
+An application where users can create and display posts containing the uploaders name, title, message, and image on the main page
 
 ## Built with:
 * React - Frontend framework for the UI
@@ -9,7 +9,10 @@ An application where users can create and display posts containing the uploaders
 * Node - Back-end javascript runtime environment
 * Redux - Used for state management
 
-## Setup:
+## Live Demo
+<a href="https://socialmedia-application.netlify.app/">Click here for a Live Demo!</a>
+
+## Local Setup:
 ```
 Within two terminals at the root directory of this project:
 
