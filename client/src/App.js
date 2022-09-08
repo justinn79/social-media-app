@@ -8,7 +8,8 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 
 import useStyles from './styles';
-import './styles.css';
+import './index.css';
+
 function App() {
 
   const [currentId, setCurrentId] = useState(null);
@@ -29,7 +30,7 @@ function App() {
         <Container>
           <Grid className={classes.mainContainer} container justifyContent="space-between" alignItems="stretch" spacing={3}>
             
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={8}>
               <Posts setCurrentId={setCurrentId}/>
             </Grid>
 
