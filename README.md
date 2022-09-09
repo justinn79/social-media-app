@@ -26,6 +26,7 @@ If you would like to run the application within your own database:
 
 cd server - Navigate into the server folder
 npm install - Install the dependencies within the server folder
+Edit the url variable within client/src/api/index.js to point to the backend route ("http://localhost:5000/posts")
 Create a .env file within the server folder with a PORT number and a CONNECTION URL to your database
 npm start - Running the server
 ```
