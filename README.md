@@ -9,9 +9,6 @@ A MERN application where users can create and display posts containing the uploa
 * Node - Back-end javascript runtime environment
 * Redux - Used for state management
 
-## Live Demo
-<a href="https://socialmedia-application.netlify.app/">Click here for a Live Demo!</a>
-
 ## Local Setup:
 ```
 Within the terminal at the root directory of this project:
@@ -20,7 +17,7 @@ cd client - Navigate into the client folder
 npm install - Install the dependencies within the client folder
 npm start - Running the client
 
------Server is already running on Heroku----------
+-----Server runs locally----------
 
 If you would like to run the application within your own database:
 
